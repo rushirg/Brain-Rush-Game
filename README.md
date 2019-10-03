@@ -1,6 +1,18 @@
-# brain_rush
+# Brain-Rush-Game
 
-A Object matching Game in Java
+### Summary
+Brain-Rush-Game is an object(circle/square) matching game. User needs to match the object shown at the bottom with the incoming object. If it matches the scores adds up, if not the game is over. 
+
+### Prerequisite
+Make sure Java is installed on your system. 
+if Java is not installed then use the following command lines for <b>Ubuntu</b>
+1. ```apt update && apt upgrade -y```
+2. ```apt install default-jre```
+3. ```apt install default-jdk```
+
+### How to play
+1. Go to the game directory(folder)
+2. Enter ```java RGgAmE1```
 
 
 ![Alt text](/brain_rush/1.png?raw=true "Main Window")
