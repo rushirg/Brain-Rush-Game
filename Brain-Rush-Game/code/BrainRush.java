@@ -22,8 +22,8 @@ public class BrainRush extends JPanel implements KeyListener
 	JLabel s = new JLabel("Score ");
 	JLabel speed = new JLabel("");
 
-	URL url = BrainRush.class.getResource( "buzz.wav" );
-	URL url2 = BrainRush.class.getResource( "abc.wav" );
+	URL url = BrainRush.class.getResource( "../data/sound/buzz.wav" );
+	URL url2 = BrainRush.class.getResource( "../data/sound/abc.wav" );
 
 	AudioClip clip = Applet.newAudioClip( url );
 	AudioClip overClip = Applet.newAudioClip( url2 );
@@ -177,7 +177,7 @@ public class BrainRush extends JPanel implements KeyListener
 
 		String [] buttons = { "Play", "About", "Exit" };
 
-		final ImageIcon icon = new ImageIcon("21.png");
+		final ImageIcon icon = new ImageIcon("../data/images/21.png");
 
 		while( true ){
 		int response = JOptionPane.showOptionDialog(null,"\t","Infinity",JOptionPane.INFORMATION_MESSAGE ,0,icon,buttons,buttons[2]);
@@ -201,13 +201,13 @@ public class BrainRush extends JPanel implements KeyListener
 
 
 		try{
-			BufferedImage myPicture = ImageIO.read(new File("3.jpg"));
+			BufferedImage myPicture = ImageIO.read(new File("../data/images/3.jpg"));
 			JLabel picLabel = new JLabel(new ImageIcon(myPicture));
 			game.add(picLabel);
 		}
 		catch( Exception e){}
 
-		URL url3 = BrainRush.class.getResource( "1.wav" );
+		URL url3 = BrainRush.class.getResource("../data/sound/1.wav");
 
 		AudioClip clip = Applet.newAudioClip( url3 );
 
